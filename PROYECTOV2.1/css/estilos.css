@@ -18,13 +18,13 @@ html{
 
 /*CABECERA*/
 
- #menu a, button{
+ #lista a, button{
      font-size: 18px !important;
      font-weight: 600;
     
  }
 
- #menu a{
+ #lista a{
      color:#3f3f3f;
      
  }
@@ -32,37 +32,6 @@ html{
 .carousel-inner {
     max-height:40rem !important;
 }
-
-
-
-/*FORMULARIO*/
-
-#bg-contactos{
-    position:relative;
-    top: -130px;
-} 
-
- #seccion-contacto{
-    background-image:url(../imagenes/hobbiton.jpg);
-    background-repeat: no-repeat;
-    min-height:965px;
-  
-}
-
-
-#contenedor-formulario{
-    position: absolute;
-    top:50%;
-    left:50%;
-    transform: translate(-50%, -50%);
-    background-image: linear-gradient(to bottom right, rgb(151, 149, 148), rgb(236, 236, 229));
-    border-radius:5px;
-}
-
-#titulo-formulario {
-    color: #3f3f3f;
-}
-
 
 /*FOOTER*/
 
@@ -74,19 +43,39 @@ footer p{
     color:#f3f3f3;
     text-align:center;
 }
-#iconos  i {
+#icono  i {
     font-size: 26px;
     padding: 0 8px;
     color:#f3f3f3;
 }
 
-/*Pantalla 1: Pequeña*/
+/*FORMULARIO*/
+
+#contacto{
+    background-image:url(../imagenes/hobbiton.jpg);
+    background-repeat: no-repeat;
+    min-height:965px;
+  
+}
+
+
+#contenedor{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    background-image: linear-gradient(to bottom right, rgb(151, 149, 148), rgb(236, 236, 229));
+    border-radius:5px;
+}
+
+#titulo{
+    color: #3f3f3f;
+}
+
+/*AJUSTES*/
 
 @media (max-width: 576px) {
-    #servicios-fila-2 {
-        width:100% !important;
-    }
-    #servicios-fila-1 {
+    #ajuste-foto {
         width:100% !important;
     }
 
@@ -97,58 +86,3 @@ footer p{
     }
 }
 
-
-/*Pantalla 2: Mediana*/
-
-
-@media (max-width:768px) {
-
-    #intro, #equipo{
-        width:90% !important;
-        margin:auto;
-    }
-
-    
-    #img-equipo{
-        max-height:20rem !important;
-        width:90%;
-    }
-    .wrapper-local {
-        width:90%;
-        margin:auto;
-        padding-top:50px;    
-    }
-    #local {
-        flex-wrap: wrap;
-    }
-    .mapa img {
-        width:100%;
-        height:auto;
-    }
-    #bg-contactos{
-        top: -120px;
-    }
-
-
-}
-
-
-/*Pantalla 3: Grande*/
-
-@media (max-width:1200px){
-    #intro, #equipo {
-        width:90% !important;
-        margin:auto;
-    }
-  
-    #local {
-        flex-wrap: wrap;
-        padding-top:30px;
-   }
-   .wrapper-local {
-    width:90%;
-    margin:auto;
-    padding-top:50px;    
-   }
- 
-}

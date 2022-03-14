@@ -1,0 +1,391 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="css/estilos.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <title>La Tierra Media</title>
+</head>
+
+<body>
+<!--CABECERA-->
+  <header class="container-fluid bg-dark d-flex justify-content-left">
+    <p class="text-light mb-0 p-2 fs-6">Contacta con nosotros +34 666666666 Ash Nazg durbatulûk, ash Nazg gimbatul, ash
+      Nazg thrakatulûk agh burzum-ishi krimpatul.</p>
+  </header>
+
+  <nav class="navbar navbar-expand-lg navbar-light p-3" id="menu">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <span class="fs-5 text-warning fw-bold">EL SEÑOR DE LOS ANILLOS</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link text-white" aria-current="page" href="#personajes">Personajes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#razas">Razas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="formulario.html">Hazte miembro</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="text" placeholder="¿Qué necesitas?" aria-label="Busqueda">
+          <button class="btn bg-danger btn-primary-outline-success text-white" type="submit">Buscar</button>
+        </form>
+      </div>
+
+    </div>
+  </nav>
+
+  <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+    </div>
+
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="imagenes/primerapelicula.jpg" alt="Los Angeles" class="d-block" style="width:100%">
+      </div>
+      <div class="carousel-item">
+        <img src="imagenes/segundaPelicula.jpeg" alt="Chicago" class="d-block" style="width:100%">
+      </div>
+      <div class="carousel-item">
+        <img src="imagenes/tercerapelicula.jpeg" alt="New York" class="d-block" style="width:100%">
+      </div>
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+
+  <audio src="audio/musica.mp3" autoplay controls></audio>
+
+ <!--CONTENIDO-->
+  <section class="d-flex flex-column justify-content-center align-items-center pt-5  text-center w-50 m-auto"
+    id="personajes">
+    <h1 class="p-3 fs-2">Aqui encontrarás información necesaria sobre<br><span
+        class="text-danger">LOS PERSONAJES</span></h1>
+
+  </section>
+
+  <section class="w-100">
+    <div class="row w-75 mx-auto" id="servicios-fila-1">
+      <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-start my-5 icono-wrap">
+        <img src="imagenes/frodo.jpg" alt="orco" width="180" height="160" class="rounded">
+
+        <div>
+          <h3 class="fs-5 mt-4 px-4 pb-1">FRODO</h3>
+          <p class="px-4">Frodo Bolsón (Frodo Baggins en el original inglés), es un personaje de la novela El Señor de
+            los Anillos de J.R.R. Tolkien. Pertenece a la raza de los hobbits. Es hijo de Drogo Bolsón y de Prímula
+            Brandigamo, sobrino de Bilbo Bolsón y medio primo de Merry.</p>
+        </div>
+
+      </div>
+
+      <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-start  my-5 icono-wrap">
+        <img src="imagenes/sam.jpg" alt="Frodo" width="180" height="160" class="rounded">
+
+        <div>
+          <h3 class="fs-5 mt-4 px-4 pb-1 icono-wrap">SAM</h3>
+          <p class="px-4">Samsagaz Gamyi (Samwise Gamgee en el original inglés), más conocido como Sam, es un personaje
+            de la novela El Señor de los Anillos de J.R.R. Tolkien. Es un hobbit que sigue el estereotipo típico de los
+            mismos, siempre leal a Frodo en la misión para destruir el anillo. Formó parte de la Compañía del Anillo y,
+            cuando esta se disolvió, acompañó a Frodo en su viaje a Mordor.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row w-75 mx-auto mb-5" id="servicios-fila-2">
+      <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-start  my-5 icono-wrap">
+        <img src="imagenes/enano.jpg" alt="enano" width="180" height="160" class="rounded">
+
+        <div>
+          <h3 class="fs-5 mt-4 px-4 pb-1">GIMLI</h3>
+          <p class="px-4">Gimli fue un Enano muy respetado en la Tierra Media durante la Tercera y Cuarta Edad. Formó
+            parte de la Compañía del Anillo y combatió en la guerra contra Sauron al final de la Tercera Edad. Después
+            de la derrota de Sauron, se le dio el señorío de Aglarond, conocido como Las Cavernas Centelleantes en el
+            Abismo de Helm.</p>
+        </div>
+      </div>
+
+      <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-start my-5 icono-wrap">
+        <img src="imagenes/legolas.jpg" alt="LEGOLAS" width="180" height="160" class="rounded">
+
+        <div>
+          <h3 class="fs-5 mt-4 px-4 pb-1">LÉGOLAS</h3>
+          <p class="px-4">Es un elfo sindar, hijo de Thranduil, Rey de los Elfos Silvanos del Bosque Negro; por lo
+            tanto, príncipe del Bosque Negro. Formó parte de la Comunidad del Anillo y se hizo muy amigo de Aragorn y de
+            Gimli. Su amistad con Gimli fue un gran paso para las relaciones entre enanos y elfos, muy debilitadas por
+            sus antiguas guerras. Sus armas eran un arco que trajo del Bosque Negro</p>
+        </div>
+      </div>
+
+      <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-start my-5 icono-wrap">
+        <img src="imagenes/merry.jpg" alt="merry" width="180" height="160" class="rounded">
+
+        <div>
+          <h3 class="fs-5 mt-4 px-4 pb-1">MERRY</h3>
+          <p class="px-4">Meriadoc Brandigamo (Meriadoc Brandybuck en el original inglés), más conocido como Merry, es
+            un hobbit de El Señor de los Anillos escrita por J.R.R. Tolkien. Era alto y delgado (comparado con el resto
+            de los hobbits), formó parte de la Compañía del Anillo y era muy buen amigo de Pippin. Poseía un carácter
+            fuerte y fidelidad hacia sus amigos..</p>
+        </div>
+      </div>
+
+      <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-start my-5 icono-wrap">
+        <img src="imagenes/pippin.jpg" alt="pipin" width="180" height="160" class="rounded">
+
+        <div>
+          <h3 class="fs-5 mt-4 px-4 pb-1">Pippin</h3>
+          <p class="px-4">Peregrin Tuk, más conocido como Pippin, es un hobbit de El Señor de los Anillos escrito por
+            J.R.R. Tolkien. Es un Hobbit normal y corriente ( más tarde fue alto y delgado gracias al brebaje de los
+            Ents). Formó parte de la Compañía del Anillo, pues era muy amigo de Merry y Frodo. Contaba con un gran
+            sentido del humor y con sus constantes preguntas (de evidente respuesta) siempre hacían enfadar a Gandalf.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-start my-5 icono-wrap">
+        <img src="imagenes/aragorln.jpg" alt="aragorln" width="180" height="160" class="rounded">
+
+        <div>
+          <h3 class="fs-5 mt-4 px-4 pb-1">Aragorn</h3>
+          <p class="px-4">Aragorn (Valor de rey en sindarin), también conocido como Trancos, fue un dúnedain y el
+            trigésimo noveno heredero de Isildur en línea directa. Al finalizar la guerra del anillo, se casó con Arwen
+            y tuvo un hijo, llamado Eldarion.</p>
+        </div>
+      </div>
+
+      <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-start my-5 icono-wrap">
+        <img src="imagenes/boromirn.jpg" alt="boromirn" width="180" height="160" class="rounded">
+
+        <div>
+          <h3 class="fs-5 mt-4 px-4 pb-1">Boromir</h3>
+          <p class="px-4">Boromir es un personaje de la novela El Señor de los Anillos de J.R.R. Tolkien. Fue uno de los
+            mejores capitanes de Gondor y fue un miembro de la Compañía del Anillo. Era el Capitán de la Torre Blanca y
+            portaba un cuerno del que se decía que su sonido atemorizaba a los enemigos, el Gran Cuerno de Vorondil. Su
+            fuerza y su ánimo le convirtieron en un gran comandante que protegió su pueblo. Incluso Éomer de Rohan, le
+            admiraba por su arrojo y liderazgo.</p>
+        </div>
+      </div>
+
+      <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-start my-5 icono-wrap">
+        <img src="imagenes/gandalf.jpg" alt="gandalf" width="180" height="160" class="rounded">
+
+        <div>
+          <h3 class="fs-5 mt-4 px-4 pb-1">GANDALF</h3>
+          <p class="px-4">Gandalf es un personaje de la novela El Señor de los Anillos y El Hobbit , aparece también en
+            el Silmarillion y en el Legendarium ,de J.R.R. Tolkien. Es uno de los personajes principales, aparte de ser
+            uno de los cinco Istari (Magos), que fueron enviados para combatir a Sauron, siendo el último de ellos en
+            llegar. Se le conocía de muchas maneras, Gandalf era el nombre que más se usaba; Mithrandir le llamaban los
+            elfos y hombres de Gondor; Incánus, entre los hombres del sur; Tharkûn, entre los enanos y Olórin, en las
+            Tierras Imperecederas, siendo éste su nombre original.</p>
+        </div>
+      </div>
+
+      <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-start my-5 icono-wrap">
+        <img src="imagenes/sauron.jpg" alt="sauron" width="180" height="160">
+
+        <div>
+          <h3 class="fs-5 mt-4 px-4 pb-1">SAURON</h3>
+          <p class="px-4">auron es el antagonista y villano principal de "El Señor de los Anillos" y aparece también en
+            El Silmarillion y El Hobbit (escritos por J.R.R. Tolkien). Se le conoció también como "el Nigromante" en "El
+            Hobbit" antes de descubrir su verdadera identidad y "El Señor Oscuro" por los hombres de Gondor entre otros
+            muchos nombres. Es un Maiar, un espiritu nacido del Pensamiento de Eru Ilúvatar, el ser supremo, pero menor
+            en Jerarquía y poder a los Valar. Sin embargo, de entre los Maiar, Sauron era el más poderoso y pertenecía a
+            la más alta jerarquía de entre todos los Maiar, justo detrás de los propios Valar. Sin embargo, fue
+            corrompido por Melkor, y se tornó de naturaleza maligna, convirtiéndose en el enemigo de Elfos y Hombres por
+            la dominación completa y tiránica de la Tierra Media, sobre todo en la Segunda y la Tercera Edad.</p>
+        </div>
+      </div>
+
+      <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-start my-5 icono-wrap">
+        <img src="imagenes/saruman.jpg" alt="saruman" width="180" height="160">
+
+        <div>
+          <h3 class="fs-5 mt-4 px-4 pb-1">SARUMAN</h3>
+          <p class="px-4">Saruman el Blanco, auto nombrado por el mismo como Saruman el Sabio, Saruman el Hacedor de
+            Anillos y Saruman el Multicolor, fue el líder de la Orden de los Istari. También era el Jefe del Concilio
+            Blanco. Se dedicaba a estudiar las artes del Enemigo con el fin de derrotarlo, pero se interesó tanto en
+            ello que terminó siendo atraído por el mal, y ambicionando para sí mismo el Anillo Único, él fue uno de los
+            mayores antagonistas de los acontecimientos sucedidos en la Guerra del Anillo.</p>
+        </div>
+      </div>
+
+      <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-start my-5 icono-wrap">
+        <img src="imagenes/gollum.jpg" alt="gollum" width="180" height="160">
+
+        <div>
+          <h3 class="fs-5 mt-4 px-4 pb-1">GOLLUM</h3>
+          <p class="px-4">Gollum, originalmente llamado Sméagol, fue un hobbit de la rama de los Fuertes nacido cerca de
+            los Campos Gladios. Vivió cerca de 589 años gracias al poder del Anillo Único, que lo desfiguro física y
+            mentalmente. Lo llamaron "Gollum" como referencia al ruido que producía con su garganta, los orcos de Cirith
+            Ungol lo llamaron Fisgón por sus servicios a Ella-Laraña. Samsagaz Gamyi lo llamaba Adulador y Bribón. Y se
+            llamaba a sí mismo "Mi Tesssoro".</p>
+        </div>
+      </div>
+
+      <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-start my-5 icono-wrap">
+        <img src="imagenes/lurtz.jpg" alt="lurtz" width="180" height="160">
+
+        <div>
+          <h3 class="fs-5 mt-4 px-4 pb-1">LURTZ</h3>
+          <p class="px-4">Lurtz fue un uruk-hai creado por Saruman en las cavernas de Isengard. Este le entregó el
+            liderazgo de un batallón uruk y le encomendó intercepetar a la compañía del anillo, capturar a Frodo y matar
+            al resto de integrantes. Es un personaje inventado para la película La Comunidad del Anillo, dirigida por
+            Peter Jackson.</p>
+        </div>
+      </div>
+
+      <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-start my-5 icono-wrap">
+        <img src="imagenes/natzgul.jpg" alt="natzgul" width="180" height="160">
+
+        <div>
+          <h3 class="fs-5 mt-4 px-4 pb-1">NATZGUL</h3>
+          <p class="px-4">Los Nazgûl son un grupo de nueve espectros que aparecen en la novela de El Señor de los
+            Anillos escrita por J.R.R. Tolkien. También son llamados Espectros del Anillo y Ulairi.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="d-flex flex-column justify-content-center align-items-center pt-5  text-center w-50 m-auto"
+    id="razas">
+    <h1 class="p-3 fs-2">Aqui encontrarás información necesaria sobre<br><span
+        class="text-danger">LAS RAZAS</span></h1>
+
+  </section>
+
+
+  <section class="w-100">
+    <div class="row w-75 mx-auto" id="servicios-fila-1">
+      <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-start my-5 icono-wrap">
+        <img src="imagenes/hombres.jpg" alt="hombres" width="180" height="160" class="rounded-circle">
+
+        <div>
+          <h3 class="fs-5 mt-4 px-4 pb-1">HOMBRES</h3>
+          <p class="px-4">La raza de los hombres se refiere a la humanidad en su conjunto y no denota el género en sí.
+            Por tanto, también puede usarse el término para referirse a las mujeres de esta raza. Los hombres son los
+            Hijos Menores de Ilúvatar y fueron conocidos por muchos nombres entre los Eldar o elfos, entre ellos: Hildor
+            los Seguidores, Apanónar los Nacidos Después, Engwar los Enfermizos, y Fírimar los Mortales además los
+            llamaron también los Usurpadores, los Forasteros e Inescrutables, los Malditos, los de Mano Torpe, los
+            Temerosos de la Noche y los Hijos del Sol.</p>
+        </div>
+
+      </div>
+
+      <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-start  my-5 icono-wrap">
+        <img src="imagenes/elfos.jpg" alt="elfos" width="180" height="160" class="rounded-circle">
+
+        <div>
+          <h3 class="fs-5 mt-4 px-4 pb-1 icono-wrap">ELFOS</h3>
+          <p class="px-4">Los Elfos fueron la más antigua y noble de las razas hablantes de la Tierra Media. También
+            llamados la Gente hermosa, Pueblo del Bosque, Primeros Nacidos, Antigua Raza y a sí mismos Quendi "los que
+            hablan". Son la raza más antigua del mundo y son los primeros hijos de Eru Iluvatar en venir al mundo y más
+            tarde encontrados por los Valar.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row w-75 mx-auto mb-5" id="servicios-fila-2">
+      <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-start  my-5 icono-wrap">
+        <img src="imagenes/enanos.jpg" alt="enanos" width="180" height="160" class="rounded-circle">
+
+        <div>
+          <h3 class="fs-5 mt-4 px-4 pb-1">ENANOS</h3>
+          <p class="px-4">Los enanos son una raza que habita en la Tierra Media. También son llamados Naugrim, Khazâd y
+            Gonnhirrim.</p>
+        </div>
+      </div>
+
+      <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-start my-5 icono-wrap">
+        <img src="imagenes/hobbits.jpg" alt="hobbits" width="180" height="160" class="rounded-circle">
+
+        <div>
+          <h3 class="fs-5 mt-4 px-4 pb-1">HOBBITS</h3>
+          <p class="px-4">Los Hobbits, también conocidos como «Medianos» (Periannath en lengua kuduk), son bastante
+            raros y tímidos con la Gente Grande. Son (o fueron) gente menuda de la mitad de la talla de un humano, y más
+            pequeños que los enanos barbudos (Los hobbits no poseen barba). Hay poca o ninguna magia en ellos.</p>
+        </div>
+      </div>
+
+      <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-start my-5 icono-wrap">
+        <img src="imagenes/orcus.jpg" alt="orcos" width="180" height="160" class="rounded-circle">
+
+        <div>
+          <h3 class="fs-5 mt-4 px-4 pb-1">ORCOS</h3>
+          <p class="px-4">Los Orcos (Orcs en el original inglés), conocidos por los elfos de Beleriand como Glamhoth
+            «Horda Estridente» son una raza malvada, criada por Melkor como burla de los Elfos. Son los Quendi que
+            cayeron en la trampa de Melkor cuando Oromë los fue a buscar para guiarlos a Aman. Fueron utilizados por los
+            Señores Oscuros como la fuerza principal de sus ejércitos, y fueron mejorados y perfeccionados a lo largo de
+            la historia, dando lugar a diversos tipos.</p>
+        </div>
+      </div>
+
+      <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-start my-5 icono-wrap">
+        <img src="imagenes/trols.jpg" alt="trols" width="180" height="160" class="rounded-circle">
+
+        <div>
+          <h3 class="fs-5 mt-4 px-4 pb-1">TROLS</h3>
+          <p class="px-4">Son una raza de criaturas malvadas de unos 4 metros de altura creadas por Morgoth, y más tarde
+            modificadas por Sauron, a partir de rocas y barro (aunque otras teorías sugieren que antiguamente fueron
+            Ents), para obtener tropas tan grandes y fuertes como los ents.</p>
+        </div>
+      </div>
+
+      <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-start my-5 icono-wrap">
+        <img src="imagenes/ents.jpg" alt="ents" width="180" height="160" class="rounded-circle">
+
+        <div>
+          <h3 class="fs-5 mt-4 px-4 pb-1">ENTS</h3>
+          <p class="px-4">Los Ents son una raza de seres inteligentes parecidos a árboles ficticios pertenecientes a la
+            novela El Señor de los Anillos, escrita por J.R.R. Tolkien. La mayor diferencia respecto a los árboles
+            normales es que ellos pueden desplazarse. Fueron creados en la Primera Edad por Yavanna, apodada "la Reina
+            de la Tierra". Su principal función era que cuidaran de los otros árboles de peligros, en otras palabras,
+            pastores de árboles. Habitaban en todos los bosques del mundo, pero al final de la Tercera Edad solo
+            quedaban unos pocos en el bosque de Fangorn.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!--FOOTER-->
+  <footer class="w-100  d-flex  align-items-center justify-content-center flex-wrap">
+    <p class="fs-5 px-3  pt-3">ESDLA página no oficial</p>
+    <div id="iconos">
+      <a href="https://www.facebook.com/El-Se%C3%B1or-de-los-Anillos-127844380576947/"><i
+          class="bi bi-facebook"></i></a>
+      <a href="https://twitter.com/LOTRonPrime"><i class="bi bi-twitter"></i></a>
+      <a href="https://www.instagram.com/lotronprime/?hl=es"><i class="bi bi-instagram"></i></a>
+      <a href="https://www.youtube.com/watch?v=YQDkKhZTM6M"><i class="bi bi-youtube"></i></a>
+    </div>
+  </footer>
+
+
+</body>
+
+</html>
