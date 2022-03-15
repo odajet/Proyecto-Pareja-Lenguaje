@@ -64,7 +64,7 @@ footer p{
     top:50%;
     left:50%;
     transform: translate(-50%, -50%);
-    background-image: linear-gradient(to bottom right, rgb(151, 149, 148), rgb(236, 236, 229));
+    background-image: linear-gradient(to bottom right, rgba(152,34,23,1), yellow);
     border-radius:5px;
 }
 
