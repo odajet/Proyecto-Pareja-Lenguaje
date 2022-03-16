@@ -18,6 +18,10 @@ html{
 
 /*CABECERA*/
 
+.navbar{
+    background-image: linear-gradient(to bottom right, rgba(152,34,23,1), yellow);
+}
+
  #lista a, button{
      font-size: 18px !important;
      font-weight: 600;

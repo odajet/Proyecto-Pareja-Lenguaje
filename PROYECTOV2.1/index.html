@@ -17,13 +17,16 @@
 
 <body>
   <!--CABECERA-->
-  <header class="container-fluid bg-dark d-flex justify-content-left">
+  <header class="container-fluid bg-dark d-flex justify-content-between">
     <p class="text-light mb-0 p-2 fs-6">Contacta con nosotros +34 666666666 Ash Nazg durbatulûk, ash Nazg gimbatul, ash
       Nazg thrakatulûk agh burzum-ishi krimpatul.</p>
+    <div>
       <audio src="audio/musica.mp3" autoplay controls></audio>
+    </div>
+
   </header>
 
-  <nav class="navbar navbar-expand-lg navbar-light p-3" id="lista">
+  <nav class="navbar navbar-expand-lg navbar-light p-3 sticky-top" id="lista">
     <div class="container">
       <a class="navbar-brand" href="#">
         <span class="fs-5 text-warning fw-bold">EL SEÑOR DE LOS ANILLOS</span>
@@ -209,6 +212,11 @@
             llegar. Se le conocía de muchas maneras, Gandalf era el nombre que más se usaba; Mithrandir le llamaban los
             elfos y hombres de Gondor; Incánus, entre los hombres del sur; Tharkûn, entre los enanos y Olórin, en las
             Tierras Imperecederas, siendo éste su nombre original.</p>
+          <button type="button" class="btn btn-danger" data-bs-toggle="popover" title="Gandalf Blanco"
+            data-bs-content="Gandalf se sacrificó por sus compañeros, y tras su muerte fue enviado a presencia de Eru 
+            (pues se dice que no ante los 'dioses' -los Valar-), 
+            que lo devolvió a la vida envestido como Gandalf el Blanco y con poderes aumentados">Gandalf
+            Blanco</button>
         </div>
       </div>
 
@@ -222,10 +230,19 @@
             Hobbit" antes de descubrir su verdadera identidad y "El Señor Oscuro" por los hombres de Gondor entre otros
             muchos nombres. Es un Maiar, un espiritu nacido del Pensamiento de Eru Ilúvatar, el ser supremo, pero menor
             en Jerarquía y poder a los Valar. Sin embargo, de entre los Maiar, Sauron era el más poderoso y pertenecía a
-            la más alta jerarquía de entre todos los Maiar, justo detrás de los propios Valar. Sin embargo, fue
-            corrompido por Melkor, y se tornó de naturaleza maligna, convirtiéndose en el enemigo de Elfos y Hombres por
-            la dominación completa y tiránica de la Tierra Media, sobre todo en la Segunda y la Tercera Edad.</p>
+            la más alta jerarquía de entre todos los Maiar, justo detrás de los propios Valar.</p>
+          <button type="button" class="btn btn-danger" data-bs-toggle="popover" title="Ojo de Sauron" data-bs-content="El Gran Ojo es la 
+            imagen que el Señor Oscuro usa para marcarse a sí mismo y a sus ejércitos, proyectando 
+            un aura de omnisciencia. Como propaganda, el Ojo de Sauron es el símbolo más potente de la Tierra Media, y su efectividad 
+            se basa en el poder genuino de la mirada de Sauron, literal y de otro tipo.">Ojo
+            de Sauron</button>
         </div>
+        <script>
+          var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+          var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+            return new bootstrap.Popover(popoverTriggerEl)
+          })
+        </script>
       </div>
 
       <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-start my-5 icono-wrap">
